@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Course Website</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  
+</head>
+<body>
+<!-- Move the script here, before the closing body tag -->
+
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" class="cta">Login</a>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+  
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="overlay">
+    <div class="hero-content">
+      <h1>Unlock Your Potential</h1>
+      <p>Join thousands of learners and take your career to the next level with our expert-led courses.</p>
+      <a href="courses.html" class="cta">Explore Courses</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <img src="img/expert-icon.png" alt="Expert Instructors">
+        <h3>Expert Instructors</h3>
+        <p>Our courses are taught by professionals with years of industry experience.</p>
+      </div>
+      <div class="feature-card">
+        <img src="img/curriculum-icon.png" alt="Comprehensive Curriculum">
+        <h3>Comprehensive Curriculum</h3>
+        <p>From beginner to advanced, we cover all the essential topics to ensure your success.</p>
+      </div>
+      <div class="feature-card">
+        <img src="img/flexible-icon.png" alt="Flexible Learning">
+        <h3>Flexible Learning</h3>
+        <p>Learn at your own pace, on your own schedule, from anywhere in the world.</p>
+      </div>
+      <div class="feature-card">
+        <img src="img/certification-icon.png" alt="Certification">
+        <h3>Certification</h3>
+        <p>Earn certificates that you can add to your resume and share on LinkedIn.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Popular Courses Section -->
+  <section class="popular-courses">
+    <h2>Popular Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <img src="img/web-development.jpg" alt="Full-Stack Web Development">
+        <div class="course-content">
+          <h3>Full-Stack Web Development</h3>
+          <p>Learn to build dynamic websites from front-end to back-end.</p>
+          <ul>
+            <li>Duration: 12 weeks</li>
+            <li>Level: Beginner to Advanced</li>
+            <li>Instructor: John Doe</li>
+          </ul>
+          <a href="#" class="cta">Enroll Now</a>
+        </div>
+      </div>
+  
+      <div class="course-card">
+        <img src="img/data-science.jpg" alt="Data Science with Python">
+        <div class="course-content">
+          <h3>Data Science with Python</h3>
+          <p>Master data analysis, visualization, and machine learning with Python.</p>
+          <ul>
+            <li>Duration: 10 weeks</li>
+            <li>Level: Intermediate</li>
+            <li>Instructor: Jane Smith</li>
+          </ul>
+          <a href="#" class="cta">Enroll Now</a>
+        </div>
+      </div>
+  
+      <div class="course-card">
+        <img src="img/digital-marketing.jpg" alt="Digital Marketing">
+        <div class="course-content">
+          <h3>Digital Marketing</h3>
+          <p>Become an expert in SEO, content marketing, and paid advertising.</p>
+          <ul>
+            <li>Duration: 8 weeks</li>
+            <li>Level: Beginner to Intermediate</li>
+            <li>Instructor: Mark Williams</li>
+          </ul>
+          <a href="#" class="cta">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <h2>What Our Students Say</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <img src="img/john-doe.jpg" alt="John Doe" class="testimonial-img">
+      <p>"This course has changed my career! I was able to land a job in just 3 months."</p>
+      <h4>- John Doe, Full-Stack Developer</h4>
+    </div>
+    <div class="testimonial-card">
+      <img src="img/sarah-lee.jpg" alt="Sarah Lee" class="testimonial-img">
+      <p>"The best learning experience I’ve ever had. The content is top-notch and very easy to follow."</p>
+      <h4>- Sarah Lee, Data Scientist</h4>
+    </div>
+    <div class="testimonial-card">
+      <img src="img/mike-thompson.jpg" alt="Mike Thompson" class="testimonial-img">
+      <p>"I highly recommend their digital marketing course. It's packed with actionable insights."</p>
+      <h4>- Mike Thompson, Marketing Manager</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Instructor Section -->
+<section class="instructors">
+  <h2>Meet Our Expert Instructors</h2>
+  <p>Our world-class instructors bring a wealth of knowledge and experience to help you succeed.</p>
+  <div class="instructor-grid">
+    <div class="instructor-card">
+      <div class="instructor-img-wrapper">
+        <img src="img/instructor1.jpg" alt="Instructor 1">
+      </div>
+      <h3>Jane Smith</h3>
+      <p>Lead Web Development Instructor with over 10 years of experience building complex web applications.</p>
+      <a href="#" class="cta">Learn More</a>
+    </div>
+    <div class="instructor-card">
+      <div class="instructor-img-wrapper">
+        <img src="img/instructor2.jpg" alt="Instructor 2">
+      </div>
+      <h3>David Brown</h3>
+      <p>Data Science expert, specializing in machine learning, AI, and big data solutions.</p>
+      <a href="#" class="cta">Learn More</a>
+    </div>
+    <div class="instructor-card">
+      <div class="instructor-img-wrapper">
+        <img src="img/instructor3.jpg" alt="Instructor 3">
+      </div>
+      <h3>Emily Johnson</h3>
+      <p>Digital Marketing Instructor, guiding students to master SEO, PPC, and content marketing strategies.</p>
+      <a href="#" class="cta">Learn More</a>
+    </div>
+  </div>
+</section>
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <h2>Ready to Start Learning?</h2>
+    <p>Join thousands of students who are upgrading their skills and advancing their careers.</p>
+    <a href="courses.html" class="cta">Get Started Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 Course Website. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
