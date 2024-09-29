@@ -11,6 +11,37 @@
   
 </head>
 <body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+    });
+  </script>
 <!-- Move the script here, before the closing body tag -->
 
 <header>
@@ -41,51 +72,156 @@
     navLinks.classList.toggle('active');
   });
 </script>
+<style>
+  .hiring-partners {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f7fb;
+  }
+
+  .hiring-partners h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .hiring-partners p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+  }
+
+  .partners-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .partner-name {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+  }
+
+  .partner-name:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+  }
+  /* hero section */
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-background-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 900px;
+    color: white;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffd700; /* Gold accent */
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffd700;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .cta:hover {
+    background-color: #ffbf00;
+    color: #fff;
+  }
+</style>
 
   
   <!-- Hero Section -->
   <section class="hero">
     <div class="overlay">
-      <div class="hero-content">
-        <h1>Shape Your Future with Confidence & Opportunity</h1>
-        <p>Empower yourself with industry-leading knowledge and hands-on training that guarantees results. Whether you're advancing your career or launching a business, our programs are designed to unlock your potential and ensure your success.</p>
-        <p>Join a network of ambitious professionals who trust us to deliver real outcomes. We provide not only cutting-edge skills but also comprehensive support—including career placement, business mentorship, and funding solutions.</p>
-        <!-- <ul class="benefits">
-          <li><strong>100% Job Placement Guarantee</strong> – Fast-track your career with personalized job support and guidance.</li>
-          <li><strong>Business Startup Mentorship</strong> – Receive expert advice to confidently launch and grow your venture.</li>
-          <li><strong>Exclusive Funding Opportunities</strong> – Secure financial backing to fuel your business ambitions post-course.</li>
-          <li><strong>Join an Elite Network</strong> – Collaborate with like-minded achievers and tap into valuable industry connections.</li>
-        </ul> -->
-        <a href="courses.html" class="cta">Start Your Journey with Us Today</a>
-      </div>
+        <div class="hero-content">
+            <h1>Unlock Your Future with Confidence</h1>
+            <p>Transform your aspirations into reality with our expert-led courses. Join a community of ambitious learners and gain the skills needed to thrive.</p>
+            <p>Experience personalized support, including career placement assistance and exclusive funding opportunities.</p>
+            <a href="courses.html" class="cta">Start Your Journey Today</a>
+        </div>
     </div>
-  </section>
-  <section class="hiring-partners">
-    <div class="container">
-      <h2>Trusted Hiring Partners</h2>
-      <p>Our graduates are in demand! We partner with leading companies across industries to ensure you get the best career opportunities.</p>
-      <div class="partners-grid">
-        <div class="partner-card">
-          <img src="img/axis-direct-logo.png" alt="Axis Direct">
-        </div>
-        <div class="partner-card">
-          <img src="img/idfc-first-logo.png" alt="IDFC First Bank">
-        </div>
-        <div class="partner-card">
-          <img src="img/icici-bank-logo.png" alt="ICICI Bank">
-        </div>
-        <div class="partner-card">
-          <img src="img/kucoin-logo.png" alt="KuCoin">
-        </div>
-        <div class="partner-card">
-          <img src="img/money-logo.png" alt="Money">
-        </div>
+</section>
+
+ <!-- Hiring Partners Section -->
+ <section class="hiring-partners">
+  <h2>Our Hiring Partners</h2>
+  <p>We collaborate with industry-leading companies to provide unparalleled job opportunities for our students.</p>
+  <div class="partners-list">
+    <div class="partner-name">Axis Direct</div>
+    <div class="partner-name">IDFC First Bank</div>
+    <div class="partner-name">ICICI Bank</div>
+    <div class="partner-name">Money</div>
+    <div class="partner-name">KuCoin</div>
+  </div>
+
+    
+    <!-- Partner Testimonials -->
+    <div class="partner-testimonials">
+      <div class="testimonial">
+        <p>"Our collaboration with Stockiozo has been outstanding. Their graduates are exceptionally skilled and have seamlessly integrated into our teams."</p>
+        <h4>- Priya Sharma, HR Manager at Axis Direct</h4>
       </div>
-      <p>Our hiring partners trust our training and graduates, and many of our students have secured positions at these renowned companies. Join us to unlock these exclusive opportunities.</p>
+      <div class="testimonial">
+        <p>"We value the strong foundation your courses provide. It ensures that your graduates are not only knowledgeable but also practical and ready to contribute."</p>
+        <h4>- Rajesh Kumar, Talent Acquisition Lead at ICICI Bank</h4>
+      </div>
+      <!-- Add more testimonials as needed -->
+    </div>
+    
+    <!-- Call to Action -->
+    <div class="call-to-action">
       <a href="courses.html" class="cta">Enroll Now & Get Hired</a>
     </div>
-  </section>
-  
+  </div>
+</section>
   
 
 
@@ -94,22 +230,22 @@
     <h2>Why Choose Us?</h2>
     <div class="feature-grid">
       <div class="feature-card">
-        <img src="img/expert-icon.png" alt="Expert Instructors">
+        <!-- <img src="img/expert-icon.png" alt="Expert Instructors"> -->
         <h3>Expert Instructors</h3>
         <p>Our courses are taught by professionals with years of industry experience.</p>
       </div>
       <div class="feature-card">
-        <img src="img/curriculum-icon.png" alt="Comprehensive Curriculum">
+        <!-- <img src="img/curriculum-icon.png" alt="Comprehensive Curriculum"> -->
         <h3>Comprehensive Curriculum</h3>
         <p>From beginner to advanced, we cover all the essential topics to ensure your success.</p>
       </div>
       <div class="feature-card">
-        <img src="img/flexible-icon.png" alt="Flexible Learning">
+      <!-- <img src="img/flexible-icon.png" alt="Flexible Learning"> -->
         <h3>Flexible Learning</h3>
         <p>Learn at your own pace, on your own schedule, from anywhere in the world.</p>
       </div>
       <div class="feature-card">
-        <img src="img/certification-icon.png" alt="Certification">
+        <!-- <img src="img/certification-icon.png" alt="Certification"> -->
         <h3>Certification</h3>
         <p>Earn certificates that you can add to your resume and share on LinkedIn.</p>
       </div>
@@ -123,7 +259,7 @@
   <h2>Exclusive Career-Boosting Courses</h2>
   <div class="course-grid">
     <div class="course-card">
-      <img src="img/stock-market.jpg" alt="Stock Market Mastery">
+      <!-- <img src="img/stock-market.jpg" alt="Stock Market Mastery"> -->
       <div class="course-content">
         <h3>Stock Market Mastery</h3>
         <p>Unlock the secrets of stock market success and take control of your financial future. Learn trading strategies directly from industry experts.</p>
@@ -138,7 +274,7 @@
     </div>
 
     <div class="course-card">
-      <img src="img/personal-finance.jpg" alt="Personal Finance & Wealth Building">
+      <!-- <img src="img/personal-finance.jpg" alt="Personal Finance & Wealth Building"> -->
       <div class="course-content">
         <h3>Personal Finance & Wealth Building</h3>
         <p>Take full control of your money, eliminate debt, build wealth, and achieve financial independence with proven techniques from finance experts.</p>
@@ -201,57 +337,56 @@
   
 <!-- Testimonials Section -->
 <section class="testimonials">
-  <h2>What Our Students Say</h2>
+  <h2>What Our Students Say About Our Stock Market Course</h2>
   <div class="testimonial-grid">
     <div class="testimonial-card">
-      <img src="img/john-doe.jpg" alt="John Doe" class="testimonial-img">
-      <p>"This course has changed my career! I was able to land a job in just 3 months."</p>
-      <h4>- John Doe, Full-Stack Developer</h4>
+      <div class="testimonial-icon">📈</div>
+      <p>"This stock market course completely transformed my investment strategy! I learned to analyze trends and make informed decisions."</p>
+      <h4>- Anjali Sharma, Aspiring Investor</h4>
     </div>
     <div class="testimonial-card">
-      <img src="img/sarah-lee.jpg" alt="Sarah Lee" class="testimonial-img">
-      <p>"The best learning experience I’ve ever had. The content is top-notch and very easy to follow."</p>
-      <h4>- Sarah Lee, Data Scientist</h4>
+      <div class="testimonial-icon">📈</div>
+      <p>"I never understood the stock market until I took this course. The hands-on training was invaluable!"</p>
+      <h4>- Rajesh Patel, Financial Analyst</h4>
     </div>
     <div class="testimonial-card">
-      <img src="img/mike-thompson.jpg" alt="Mike Thompson" class="testimonial-img">
-      <p>"I highly recommend their digital marketing course. It's packed with actionable insights."</p>
-      <h4>- Mike Thompson, Marketing Manager</h4>
+      <div class="testimonial-icon">📈</div>
+      <p>"Thanks to this course, I feel confident managing my investment portfolio. The strategies I learned are practical and easy to apply!"</p>
+      <h4>- Neha Singh, Self-Directed Trader</h4>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-icon">📈</div>
+      <p>"The real-world case studies provided me with insights that I couldn't find anywhere else. Highly recommend!"</p>
+      <h4>- Karan Mehta, Investment Consultant</h4>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-icon">📈</div>
+      <p>"This course demystified the stock market for me. I now feel empowered to make my own investment decisions."</p>
+      <h4>- Priya Verma, Beginner Investor</h4>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-icon">📈</div>
+      <p>"The mentorship I received was invaluable. I was able to apply the knowledge immediately and see results!"</p>
+      <h4>- Rakesh Gupta, Portfolio Manager</h4>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-icon">📈</div>
+      <p>"I appreciate the supportive community that came with the course. Networking with other students was a game changer."</p>
+      <h4>- Seema Khanna, Stock Market Enthusiast</h4>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-icon">📈</div>
+      <p>"This course exceeded my expectations! The knowledge I gained helped me secure a promotion in my job."</p>
+      <h4>- Vikram Joshi, Financial Analyst</h4>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-icon">📈</div>
+      <p>"Learning from industry experts made all the difference. I now have the confidence to invest wisely!"</p>
+      <h4>- Tara Iyer, Investment Banker</h4>
     </div>
   </div>
 </section>
 
-<!-- Instructor Section -->
-<section class="instructors">
-  <h2>Meet Our Expert Instructors</h2>
-  <p>Our world-class instructors bring a wealth of knowledge and experience to help you succeed.</p>
-  <div class="instructor-grid">
-    <div class="instructor-card">
-      <div class="instructor-img-wrapper">
-        <img src="img/instructor1.jpg" alt="Instructor 1">
-      </div>
-      <h3>Jane Smith</h3>
-      <p>Lead Web Development Instructor with over 10 years of experience building complex web applications.</p>
-      <a href="#" class="cta">Learn More</a>
-    </div>
-    <div class="instructor-card">
-      <div class="instructor-img-wrapper">
-        <img src="img/instructor2.jpg" alt="Instructor 2">
-      </div>
-      <h3>David Brown</h3>
-      <p>Data Science expert, specializing in machine learning, AI, and big data solutions.</p>
-      <a href="#" class="cta">Learn More</a>
-    </div>
-    <div class="instructor-card">
-      <div class="instructor-img-wrapper">
-        <img src="img/instructor3.jpg" alt="Instructor 3">
-      </div>
-      <h3>Emily Johnson</h3>
-      <p>Digital Marketing Instructor, guiding students to master SEO, PPC, and content marketing strategies.</p>
-      <a href="#" class="cta">Learn More</a>
-    </div>
-  </div>
-</section>
   <!-- Call to Action Section -->
   <section class="cta-section">
     <h2>Ready to Start Learning?</h2>
